@@ -13,7 +13,7 @@ export DEBCONF_NONINTERACTIVE_SEEN=true
 
 APT_OPTS="--assume-yes --no-install-suggests --no-install-recommends -o Dpkg::Options::=\"--force-confdef\" \
   -o Dpkg::Options::=\"--force-confold\""
-  
+
 echo "adding repositories ..."
 chown -R _apt:root /var/lib/apt/lists
 echo "upgrading packages ..."
@@ -31,3 +31,6 @@ apt-get install -y python3-pip libpcre3-dev
 echo "Updated"
 
 chown -R vagrant /usr/local/bin
+
+export RAW_GITHUB=https://raw.githubusercontent.com
+curl -L ${RAW_GITHUB}/warrensbox/tgswitch/release/install.sh | bash
