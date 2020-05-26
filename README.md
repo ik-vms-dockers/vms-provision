@@ -1,40 +1,34 @@
-# Module Blueprint
+# Module Vm Provision
 
-Terraform module blueprint
+VM provision module
 
-[![](https://img.shields.io/github/license/terraform-module/terraform-module-blueprint)](https://github.com/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/v/tag/terraform-module/terraform-module-blueprint)
-[![](https://img.shields.io/github/workflow/status/terraform-module/terraform-module-blueprint/Validator/master)](https://github.com/terraform-module/terraform-module-blueprint/actions?query=is%3Acompleted)
-![](https://github.com/terraform-module/terraform-module-blueprint/workflows/Validator/badge.svg)
-![](https://github.com/terraform-module/terraform-module-blueprint/workflows/Labeler/badge.svg)
-![](https://img.shields.io/issues/github/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/issues/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/issues-closed/terraform-module/terraform-module-blueprint)
-[![](https://img.shields.io/github/languages/code-size/terraform-module/terraform-module-blueprint)](https://github.com/terraform-module/terraform-module-blueprint)
-[![](https://img.shields.io/github/repo-size/terraform-module/terraform-module-blueprint)](https://github.com/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/languages/top/terraform-module/terraform-module-blueprint?color=green&logo=terraform&logoColor=blue)
-![](https://img.shields.io/github/commit-activity/m/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/contributors/terraform-module/terraform-module-blueprint)
-![](https://img.shields.io/github/last-commit/terraform-module/terraform-module-blueprint)
-[![Maintenance](https://img.shields.io/badge/Maintenu%3F-oui-green.svg)](https://GitHub.com/terraform-module/terraform-module-blueprint/graphs/commit-activity)
+[![](https://img.shields.io/github/license/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
+![](https://img.shields.io/github/v/tag/terraform-module/vm-provision)
+[![](https://img.shields.io/github/workflow/status/terraform-module/vm-provision/Validator/master)](https://github.com/terraform-module/vm-provision/actions?query=is%3Acompleted)
+![](https://github.com/terraform-module/vm-provision/workflows/Validator/badge.svg)
+![](https://github.com/terraform-module/vm-provision/workflows/Labeler/badge.svg)
+![](https://img.shields.io/issues/github/terraform-module/vm-provision)
+![](https://img.shields.io/github/issues/terraform-module/vm-provision)
+![](https://img.shields.io/github/issues-closed/terraform-module/vm-provision)
+[![](https://img.shields.io/github/languages/code-size/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
+[![](https://img.shields.io/github/repo-size/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
+![](https://img.shields.io/github/languages/top/terraform-module/vm-provision?color=green&logo=terraform&logoColor=blue)
+![](https://img.shields.io/github/commit-activity/m/terraform-module/vm-provision)
+![](https://img.shields.io/github/contributors/terraform-module/vm-provision)
+![](https://img.shields.io/github/last-commit/terraform-module/vm-provision)
+[![Maintenance](https://img.shields.io/badge/Maintenu%3F-oui-green.svg)](https://GitHub.com/terraform-module/vm-provision/graphs/commit-activity)
 
 ## Usage example
 
 Here's the gist of using it directly from github.
 
-```hcl
-
+```sh
+exec /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ik-vms-dockers/vms-provision/master/example/001.install.sh)"
 ```
 
 ## Assumptions
 
 ## Available features
-
-## Module Variables
-
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-Error: no lines in file
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Commands
 
@@ -67,7 +61,7 @@ Submit a pull request
 
 # Authors
 
-Currently maintained by [Ivan Katliarchuk](https://github.com/ivankatliarchuk) and these [awesome contributors](https://github.com/terraform-module/terraform-module-blueprint/graphs/contributors).
+Currently maintained by [Ivan Katliarchuk](https://github.com/ivankatliarchuk) and these [awesome contributors](https://github.com/terraform-module/vm-provision/graphs/contributors).
 
 [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
 

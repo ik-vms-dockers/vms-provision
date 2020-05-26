@@ -2,7 +2,14 @@
 
 
 ARCH="$(uname -m | sed 's|i686|386|' | sed 's|x86_64|amd64|')"
-# Install Prereq Packages
+
+echo "Run in priveledged mode"
+
+if (( $EUID != 0 )); then
+    echo "Please run as root"
+    exit
+fi
+
 export DEBIAN_PRIORITY=critical
 export DEBIAN_FRONTEND=noninteractive
 export DEBCONF_NONINTERACTIVE_SEEN=true
@@ -22,8 +29,6 @@ apt-get install -qqy  \
 
 apt-get install -y python3-pip libpcre3-dev
 
-curl -L https://raw.githubusercontent.com/warrensbox/tgswitch/release/install.sh | bash
-
 echo "Updated"
-echo 'export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"' >> ~/.bash_profile
+
 chown -R vagrant /usr/local/bin
