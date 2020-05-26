@@ -9,7 +9,7 @@ echo 'export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"' >> ~/.bash_profile
 
 if ! grep -qF "#step1" $BASH_PROFILE;
 then {
-  yes | sh -c "$(curl -fsSL ${RAW_GITHUB}/Linuxbrew/install/master/install.sh)"
+  yes | sh -c "$(curl -fsSL ${RAW_GITHUB}/Homebrew/install/master/install.sh)"
   yes | sh -c "$(curl -fsSL ${RAW_GITHUB}/warrensbox/terraform-switcher/release/install.sh)"
   COMPDIR=$(pkg-config --variable=completionsdir bash-completion)
   sudo mkdir -p ${BREW_LINKED_DIR}
@@ -38,10 +38,10 @@ cdtgswitch(){
 #step1 $(date +%F)
 
 EOF
-  awk '{print}' >> ${BASH_PROFILE}
+  awk '{print}' >> $BASH_PROFILE
 } fi
 
-source ${BASH_PROFILE}
+source $BASH_PROFILE
 
 if [ ! -f ./Brewfile ]; then
     echo "Brewfile file not found!"

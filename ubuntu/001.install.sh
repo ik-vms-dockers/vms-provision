@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -e
 
 ARCH="$(uname -m | sed 's|i686|386|' | sed 's|x86_64|amd64|')"
 
