@@ -7,6 +7,9 @@ echo "Run in non priveledged mode"
 
 echo 'export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"' >> ~/.bash_profile
 
+BASH_PROFILE=~/.profile
+BREW_LINKED_DIR="/home/linuxbrew/.linuxbrew/var/homebrew/linked"
+
 if ! grep -qF "#step1" $BASH_PROFILE;
 then {
   yes | sh -c "$(curl -fsSL ${RAW_GITHUB}/Homebrew/install/master/install.sh)"
