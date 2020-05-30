@@ -1,0 +1,16 @@
+name: validator
+# This workflow is triggered on pushes to the repository.
+on: [push, pull_request, issues]
+
+jobs:
+  docs:
+    name: Pre-Commit-Hook
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Deps
+        run: |
+          brew install pre-commit
+      - name: Check All Files
+        run: |
+          pre-commit run --all-files
