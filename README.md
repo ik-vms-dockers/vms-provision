@@ -2,21 +2,20 @@
 
 VM provision module
 
-[![](https://img.shields.io/github/license/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
-![](https://img.shields.io/github/v/tag/terraform-module/vm-provision)
-[![](https://img.shields.io/github/workflow/status/terraform-module/vm-provision/validator/master)](https://github.com/terraform-module/vm-provision/actions?query=is%3Acompleted)
-![](https://github.com/terraform-module/vm-provision/workflows/Validator/badge.svg)
-![](https://github.com/terraform-module/vm-provision/workflows/Labeler/badge.svg)
-![](https://img.shields.io/issues/github/terraform-module/vm-provision)
-![](https://img.shields.io/github/issues/terraform-module/vm-provision)
-![](https://img.shields.io/github/issues-closed/terraform-module/vm-provision)
-[![](https://img.shields.io/github/languages/code-size/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
-[![](https://img.shields.io/github/repo-size/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
-![](https://img.shields.io/github/languages/top/terraform-module/vm-provision?color=green&logo=terraform&logoColor=blue)
-![](https://img.shields.io/github/commit-activity/m/terraform-module/vm-provision)
-![](https://img.shields.io/github/contributors/terraform-module/vm-provision)
-![](https://img.shields.io/github/last-commit/terraform-module/vm-provision)
-[![Maintenance](https://img.shields.io/badge/Maintenu%3F-oui-green.svg)](https://GitHub.com/terraform-module/vm-provision/graphs/commit-activity)
+[![](https://img.shields.io/github/license/ik-vms-dockers/vms-provision)](https://github.com/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/v/tag/ik-vms-dockers/vms-provision)
+[![](https://img.shields.io/github/workflow/status/ik-vms-dockers/vms-provision/validator/master)](https://github.com/ik-vms-dockers/vms-provision/actions?query=is%3Acompleted)
+![](https://github.com/ik-vms-dockers/vms-provision/workflows/validator/badge.svg)
+![](https://img.shields.io/issues/github/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/issues/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/issues-closed/ik-vms-dockers/vms-provision)
+[![](https://img.shields.io/github/languages/code-size/ik-vms-dockers/vms-provision)](https://github.com/ik-vms-dockers/vms-provision)
+[![](https://img.shields.io/github/repo-size/ik-vms-dockers/vms-provision)](https://github.com/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/languages/top/ik-vms-dockers/vms-provision?color=green&logo=terraform&logoColor=blue)
+![](https://img.shields.io/github/commit-activity/m/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/contributors/ik-vms-dockers/vms-provision)
+![](https://img.shields.io/github/last-commit/ik-vms-dockers/vms-provision)
+[![Maintenance](https://img.shields.io/badge/Maintenu%3F-oui-green.svg)](https://GitHub.com/ik-vms-dockers/vms-provision/graphs/commit-activity)
 
 ## Usage example
 
@@ -61,7 +60,7 @@ Submit a pull request
 
 # Authors
 
-Currently maintained by [Ivan Katliarchuk](https://github.com/ivankatliarchuk) and these [awesome contributors](https://github.com/terraform-module/vm-provision/graphs/contributors).
+Currently maintained by [Ivan Katliarchuk](https://github.com/ivankatliarchuk) and these [awesome contributors](https://github.com/ik-vms-dockers/vms-provision/graphs/contributors).
 
 [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
 
