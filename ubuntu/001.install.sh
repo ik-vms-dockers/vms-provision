@@ -29,7 +29,7 @@ echo "packages installed"
 chown -R ${USER} /usr/local/bin
 curl -L https://raw.githubusercontent.com/warrensbox/tgswitch/release/install.sh | bash
 echo "install completed"
-apt autoremove && apt clean
+apt autoremove -y && apt clean
 echo "cleanup completed"
 
 ln -sfn  /usr/bin/python3 /usr/bin/python
