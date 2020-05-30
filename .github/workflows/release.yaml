@@ -1,4 +1,4 @@
-name: Bump version
+name: release it
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip') && contains(github.event.head_commit.message, 'release')"
     steps:
     - run: echo "I only run if the commit has 'release' in its!"
-    steps:
+
     - uses: actions/checkout@master
       with:
         fetch-depth: '2'
