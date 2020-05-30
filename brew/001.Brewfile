@@ -58,3 +58,5 @@ brew "aws-vault"
 end
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
+
+brew "pass"

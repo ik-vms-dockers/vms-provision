@@ -2,6 +2,9 @@
 
 set -e
 
+: ${USER:-vagrant}
+: ${PACKAGES:-build-essential}
+
 ARCH="$(uname -m | sed 's|i686|386|' | sed 's|x86_64|amd64|')"
 
 echo "Run in priveledged mode"
@@ -19,19 +22,14 @@ echo "adding repositories ..."
 chown -R _apt:root /var/lib/apt/lists
 echo "upgrading packages ..."
 apt-get update ${APT_OPTS}
-apt-get dist-upgrade ${APT_OPTS}
+apt-get dist-upgrade --assume-yes
 echo "install packages ..."
-apt-get install -qqy \
-  apt-utils apt-transport-https gcc openssh-client bash bash-completion gnupg gnupg2 netcat \
-  build-essential curl git-core lsb-core lsb-release build-essential \
-  mercurial pkg-config zip \
-  file vim ruby wget python3 make
+apt-get install -qqy ${PACKAGES}
+echo "packages installed"
+chown -R ${USER} /usr/local/bin
+curl -L https://raw.githubusercontent.com/warrensbox/tgswitch/release/install.sh | bash
+echo "install completed"
+apt autoremove && apt clean
+echo "cleanup completed"
 
-apt-get install -y python3-pip libpcre3-dev
-
-echo "Updated"
-
-chown -R vagrant /usr/local/bin
-
-export RAW_GITHUB=https://raw.githubusercontent.com
-curl -L ${RAW_GITHUB}/warrensbox/tgswitch/release/install.sh | bash
+ln -sfn  /usr/bin/python3 /usr/bin/python

@@ -4,7 +4,7 @@ VM provision module
 
 [![](https://img.shields.io/github/license/terraform-module/vm-provision)](https://github.com/terraform-module/vm-provision)
 ![](https://img.shields.io/github/v/tag/terraform-module/vm-provision)
-[![](https://img.shields.io/github/workflow/status/terraform-module/vm-provision/Validator/master)](https://github.com/terraform-module/vm-provision/actions?query=is%3Acompleted)
+[![](https://img.shields.io/github/workflow/status/terraform-module/vm-provision/validator/master)](https://github.com/terraform-module/vm-provision/actions?query=is%3Acompleted)
 ![](https://github.com/terraform-module/vm-provision/workflows/Validator/badge.svg)
 ![](https://github.com/terraform-module/vm-provision/workflows/Labeler/badge.svg)
 ![](https://img.shields.io/issues/github/terraform-module/vm-provision)

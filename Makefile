@@ -5,6 +5,7 @@
 # -include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
 
 help/local:
+	@printf "Usage: make [target] [VARIABLE=value]\nTargets:\n"
 	@cat Makefile* | grep -E '^[a-zA-Z_-]+:.*?## .*$$' | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 help: help/local

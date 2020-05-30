@@ -1,4 +1,4 @@
-name: Validator
+name: validator
 # This workflow is triggered on pushes to the repository.
 on: [push, pull_request, issues]
 
@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Install Deps
         run: |
-          brew install pre-commit terraform-docs terraform tflint
+          brew install pre-commit
       - name: Check All Files
         run: |
           pre-commit run --all-files
